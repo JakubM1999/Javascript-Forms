@@ -1,6 +1,10 @@
+/*Here Im getting the elements from html that I need to hijack the form that I created in
+html and I do it by getting ID and class elements*/
 let id = (id) => document.getElementById(id);
 let classes = (classes) => document.getElementsByClassName(classes);
 
+
+/* Here I define every element that I need*/
 let firstName = id("firstName"),
 lastName = id("lastName"),
 username = id("username"),
@@ -13,6 +17,8 @@ error = classes("error"),
 yesIcon = classes("yesIcon"),
 cancelIcon = classes("cancelIcon");
 
+
+/*Here is the event listener*/
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
 
@@ -24,6 +30,8 @@ form.addEventListener("submit", (e) =>{
     engine(password, 5, "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters")
 });
 
+
+/*Here is if...else function that outpust error and successes*/
 let engine = (id, serial, message) => {
 
     if(id.value.trim() === "") {

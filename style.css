@@ -1,3 +1,4 @@
+/* MAIN */
 *{
     margin: 0;
     padding: 0;
@@ -19,12 +20,16 @@ body{
     padding: 50px;
 }
 
+/* Title of the form */
+
 .title{
     font-style: Italic;
     font-weight: lighter;
     font-size: 50px;
     margin-bottom: 40px;
 }
+
+/* labels of the form */
 
 label{
     display: block;
