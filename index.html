@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- required meta links -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+    <link href="style.css" rel="stylesheet">
+    <title>JavaScript - Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="title">REGISTER FORM</div>
+
+            <!-- FIRST NAME -->
+            <div>
+                <label for="firstName">First Name <strong style="color: #B50000;">*</strong></label>
+                <input type="text" name="firstName" id="firstName" placeholder="Your first name">
+
+                <img src="/icons/yes.svg" width="40px" height="40px" class="yesIcon">
+                <img src="/icons/cancel.svg" width="40px" height="40px" class="cancelIcon">
+
+                <div class="error"></div>
+            </div>
+            <!-- LAST NAME -->
+            <div>
+                <label for="lastName">Last Name <strong style="color: #B50000;">*</strong></label>
+                <input type="text" name="lastName" id="lastName" placeholder="Your last name">
+
+                <img src="/icons/yes.svg" width="40px" height="40px" class="yesIcon">
+                <img src="/icons/cancel.svg" width="40px" height="40px" class="cancelIcon">
+
+                <div class="error"></div>
+            </div>
+            <!-- USERNAME -->
+            <div>
+                <label for="username">Username <strong style="color: #B50000;">*</strong></label>
+                <input type="text" name="username" id="username" placeholder="Your username">
+
+                <img src="/icons/yes.svg" width="40px" height="40px" class="yesIcon">
+                <img src="/icons/cancel.svg" width="40px" height="40px" class="cancelIcon">
+
+                <div class="error"></div>
+            </div>
+            <!-- E-MAIL -->
+            <div>
+                <label for="email">E-mail <strong style="color: #B50000;">*</strong></label>
+                <input type="email" name="email" id="email" placeholder="Your E-mail">
+
+                <img src="/icons/yes.svg" width="40px" height="40px" class="yesIcon">
+                <img src="/icons/cancel.svg" width="40px" height="40px" class="cancelIcon">
+
+                <div class="error"></div>
+            </div>
+            <!-- DATE OF BIRTH -->
+            <div>
+                <label for="dateOfBirth">Date Of Birth <strong style="color: #B50000;">*</strong></label>
+                <input type="date" name="dateOfBirth" id="dateOfBirth">
+
+                <img src="/icons/yes.svg" width="40px" height="40px" class="yesIcon">
+                <img src="/icons/cancel.svg" width="40px" height="40px" class="cancelIcon">
+
+                <div class="error"></div>
+            </div>
+            <!-- PASSWORD -->
+            <div>
+                <label for="password">Password <strong style="color: #B50000;">*</strong></label>
+                    <input type="password" name="password" id="password" placeholder="Your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            
+                    <img src="/icons/yes.svg" width="40px" height="40px" class="yesIcon">
+                    <img src="/icons/cancel.svg" width="40px" height="40px" class="cancelIcon">
+            
+                    <div class="error"></div>
+            </div>
+            <!-- MORE INFO -->
+            <div>
+                <label for="otherInfo">Other Information</label>
+                <textarea name="otherInfo" placeholder="Write here..."></textarea>
+            </div>
+
+            <button id="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
